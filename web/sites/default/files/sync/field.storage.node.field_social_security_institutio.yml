@@ -1,0 +1,30 @@
+uuid: 67807de7-04f7-4880-bfea-ff6d7738dbac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_social_security_institutio
+field_name: field_social_security_institutio
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: msa
+      label: MSA
+    -
+      value: mgen
+      label: MGEN
+    -
+      value: ameli
+      label: AMELI
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

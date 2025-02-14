@@ -1,0 +1,20 @@
+uuid: efd3087d-a6e2-4de8-94d2-2b9fe2ddbc6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - config_pages
+    - paragraphs
+id: config_pages.field_rules
+field_name: field_rules
+entity_type: config_pages
+type: entity_reference
+settings:
+  target_type: paragraph
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

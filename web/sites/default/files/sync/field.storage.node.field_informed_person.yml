@@ -1,0 +1,20 @@
+uuid: 055688b8-4cd1-4ec1-9aac-3bd58442b6f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: node.field_informed_person
+field_name: field_informed_person
+entity_type: node
+type: entity_reference
+settings:
+  target_type: paragraph
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

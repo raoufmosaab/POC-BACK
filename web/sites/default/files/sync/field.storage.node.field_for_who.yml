@@ -1,0 +1,27 @@
+uuid: 67a954d8-03f4-4c8f-ae9a-a6a481ff0159
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_for_who
+field_name: field_for_who
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: me
+      label: Me
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

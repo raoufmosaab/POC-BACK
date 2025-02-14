@@ -1,0 +1,23 @@
+uuid: 2f246973-66d0-4693-b2c8-d51d5e090049
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_have_social_security
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_have_social_security
+field_name: field_have_social_security
+entity_type: node
+bundle: pre_admission_folder
+label: 'Have Social Security'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'false'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

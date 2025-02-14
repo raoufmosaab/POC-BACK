@@ -1,0 +1,16 @@
+uuid: 779f4040-fb12-4a28-9f08-280081fbc652
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.practitioner
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.practitioner
+target_entity_type_id: node
+target_bundle: practitioner
+default_langcode: site_default
+language_alterable: false

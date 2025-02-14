@@ -1,0 +1,21 @@
+uuid: ac2fd265-e845-4971-8259-12b6708b4c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birth_date
+    - node.type.pre_admission_folder
+  module:
+    - datetime
+id: node.pre_admission_folder.field_birth_date
+field_name: field_birth_date
+entity_type: node
+bundle: pre_admission_folder
+label: 'Birth Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

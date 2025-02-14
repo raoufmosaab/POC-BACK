@@ -1,0 +1,19 @@
+uuid: d3d31adc-68ee-4480-bf69-c33900c6c15c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.progression_step
+id: paragraph.progression_step.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: progression_step
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

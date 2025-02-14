@@ -1,0 +1,27 @@
+uuid: 83eca59d-c996-4a31-b479-503cfc4a13f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_have_digital_assurance_car
+field_name: field_have_digital_assurance_car
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'true'
+      label: 'Yes'
+    -
+      value: 'false'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

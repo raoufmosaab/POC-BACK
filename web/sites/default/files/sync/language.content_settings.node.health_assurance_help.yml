@@ -1,0 +1,16 @@
+uuid: 35b65a37-37f2-4d11-bffd-fc40c8429b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.health_assurance_help
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.health_assurance_help
+target_entity_type_id: node
+target_bundle: health_assurance_help
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: 45c0467a-9104-4184-a868-61bac166c9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institution
+    - node.type.institution
+    - node.type.pre_admission_folder
+id: node.pre_admission_folder.field_institution
+field_name: field_institution
+entity_type: node
+bundle: pre_admission_folder
+label: Institution
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      institution: institution
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

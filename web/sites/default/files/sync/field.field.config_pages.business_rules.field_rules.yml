@@ -1,0 +1,29 @@
+uuid: 20873681-89da-4b73-8f38-66095ad06f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.business_rules
+    - field.storage.config_pages.field_rules
+    - paragraphs.paragraphs_type.business_rule
+id: config_pages.business_rules.field_rules
+field_name: field_rules
+entity_type: config_pages
+bundle: business_rules
+label: Rules
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      business_rule: business_rule
+    negate: 0
+    target_bundles_drag_drop:
+      business_rule:
+        weight: 2
+        enabled: true
+field_type: entity_reference

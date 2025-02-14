@@ -1,0 +1,23 @@
+uuid: 99c97cce-4535-4b54-bfc2-4bfd4a3a6ab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_number
+    - node.type.pre_admission_folder
+id: node.pre_admission_folder.field_social_number
+field_name: field_social_number
+entity_type: node
+bundle: pre_admission_folder
+label: 'Social Number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

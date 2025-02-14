@@ -1,0 +1,23 @@
+uuid: a26440cb-827d-406d-ad33-a3577322c174
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_number_key
+    - node.type.pre_admission_folder
+id: node.pre_admission_folder.field_social_number_key
+field_name: field_social_number_key
+entity_type: node
+bundle: pre_admission_folder
+label: 'Social Number Key'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

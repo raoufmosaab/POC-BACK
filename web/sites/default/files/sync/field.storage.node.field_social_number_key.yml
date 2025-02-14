@@ -1,0 +1,20 @@
+uuid: 005b0b8e-086c-4f96-9664-b63cca37d627
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_social_number_key
+field_name: field_social_number_key
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

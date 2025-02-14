@@ -1,0 +1,29 @@
+uuid: 58836170-271a-410b-8432-c2a0e350d5c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_health_assurance_help
+    - node.type.health_assurance_help
+    - node.type.pre_admission_folder
+id: node.pre_admission_folder.field_health_assurance_help
+field_name: field_health_assurance_help
+entity_type: node
+bundle: pre_admission_folder
+label: 'Health Assurance Help'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      health_assurance_help: health_assurance_help
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

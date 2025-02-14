@@ -1,0 +1,26 @@
+uuid: 2393c4b2-f0d6-4c3c-8185-25a010c0449c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.progression_step
+  module:
+    - text
+id: paragraph.progression_step.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: progression_step
+label: SubTitle
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text

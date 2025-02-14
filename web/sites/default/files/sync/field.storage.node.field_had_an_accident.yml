@@ -1,0 +1,27 @@
+uuid: c6c073ca-d54e-4e05-bab8-fad08bf8d17b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_had_an_accident
+field_name: field_had_an_accident
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'true'
+      label: 'Yes'
+    -
+      value: 'false'
+      label: 'No'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

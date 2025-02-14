@@ -1,0 +1,16 @@
+uuid: 31caded0-91d7-4fa8-9a40-533adb2b164d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.confort_offer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.confort_offer
+target_entity_type_id: node
+target_bundle: confort_offer
+default_langcode: site_default
+language_alterable: false

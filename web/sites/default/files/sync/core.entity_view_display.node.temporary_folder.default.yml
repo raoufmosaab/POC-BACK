@@ -1,0 +1,28 @@
+uuid: 6032a899-62db-4cf7-90ef-106baa5e9db8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.temporary_folder.field_state
+    - node.type.temporary_folder
+  module:
+    - user
+id: node.temporary_folder.default
+targetEntityType: node
+bundle: temporary_folder
+mode: default
+content:
+  field_state:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

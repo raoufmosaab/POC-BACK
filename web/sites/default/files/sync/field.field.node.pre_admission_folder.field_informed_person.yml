@@ -1,0 +1,32 @@
+uuid: cdba10bb-95f1-40de-bcd5-33f8cc6af31f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_informed_person
+    - node.type.pre_admission_folder
+    - paragraphs.paragraphs_type.trusted_person
+id: node.pre_admission_folder.field_informed_person
+field_name: field_informed_person
+entity_type: node
+bundle: pre_admission_folder
+label: 'Informed Person'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      trusted_person: trusted_person
+    negate: 0
+    target_bundles_drag_drop:
+      business_rule:
+        weight: 3
+        enabled: false
+      trusted_person:
+        weight: 4
+        enabled: true
+field_type: entity_reference

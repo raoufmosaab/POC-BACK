@@ -1,0 +1,32 @@
+uuid: ba12f817-d29e-4783-9a44-7f81832f98a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.progression_dash
+    - field.field.config_pages.progression_dash.field_progression_steps
+    - field.field.config_pages.progression_dash.field_steps
+  module:
+    - custom_field
+id: config_pages.progression_dash.default
+targetEntityType: config_pages
+bundle: progression_dash
+mode: default
+content:
+  field_progression_steps:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_steps:
+    type: custom_formatter
+    label: above
+    settings:
+      fields: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

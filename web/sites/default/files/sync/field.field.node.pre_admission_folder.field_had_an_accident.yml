@@ -1,0 +1,23 @@
+uuid: 83e30ead-ab45-40aa-bbd1-429cec67624f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_had_an_accident
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_had_an_accident
+field_name: field_had_an_accident
+entity_type: node
+bundle: pre_admission_folder
+label: 'Had an accident'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'false'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

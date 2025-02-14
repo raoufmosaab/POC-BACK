@@ -1,0 +1,21 @@
+uuid: 5313a70e-fb56-4c71-8d13-c31acd7f0524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hospitalisation_date
+    - node.type.pre_admission_folder
+  module:
+    - datetime
+id: node.pre_admission_folder.field_hospitalisation_date
+field_name: field_hospitalisation_date
+entity_type: node
+bundle: pre_admission_folder
+label: 'Hospitalisation Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

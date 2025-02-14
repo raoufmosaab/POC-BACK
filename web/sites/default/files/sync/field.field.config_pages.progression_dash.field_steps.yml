@@ -1,0 +1,92 @@
+uuid: 8f50e757-1fe9-4476-b9e1-08a5ac00dc17
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.progression_dash
+    - field.storage.config_pages.field_steps
+  module:
+    - custom_field
+id: config_pages.progression_dash.field_steps
+field_name: field_steps
+entity_type: config_pages
+bundle: progression_dash
+label: Steps
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  field_settings:
+    title:
+      type: text
+      weight: 0
+      check_empty: false
+      widget_settings:
+        label: Title
+        translatable: false
+        settings:
+          description: ''
+          description_display: after
+          size: 60
+          placeholder: ''
+          maxlength: 255
+          maxlength_js: false
+          prefix: ''
+          suffix: ''
+          required: false
+    subtitle:
+      type: text
+      weight: 0
+      check_empty: false
+      widget_settings:
+        label: Subtitle
+        translatable: false
+        settings:
+          description: ''
+          description_display: after
+          size: 60
+          placeholder: ''
+          maxlength: 255
+          maxlength_js: false
+          prefix: ''
+          suffix: ''
+          required: false
+    state:
+      type: integer
+      weight: 0
+      check_empty: false
+      widget_settings:
+        label: State
+        translatable: false
+        settings:
+          description: ''
+          description_display: after
+          placeholder: ''
+          min: null
+          max: null
+          prefix: ''
+          suffix: ''
+          required: false
+    description:
+      type: textarea
+      weight: 0
+      check_empty: false
+      widget_settings:
+        label: Description
+        translatable: false
+        settings:
+          description: ''
+          description_display: after
+          placeholder: ''
+          maxlength: 255
+          maxlength_js: false
+          required: false
+          rows: 5
+          formatted: false
+          default_format: plain_text
+          format:
+            guidelines: true
+            help: true
+field_type: custom

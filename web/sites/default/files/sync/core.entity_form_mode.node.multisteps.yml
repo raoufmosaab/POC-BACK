@@ -1,0 +1,11 @@
+uuid: e209f2a4-f35f-4161-b840-1c58b82340d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.multisteps
+label: Multisteps
+description: ''
+targetEntityType: node
+cache: true

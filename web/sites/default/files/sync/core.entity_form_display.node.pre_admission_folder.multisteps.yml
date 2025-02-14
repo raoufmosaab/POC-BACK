@@ -1,0 +1,238 @@
+uuid: c443d8e5-b9e7-4db3-9261-f0de5e9b2cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.multisteps
+    - field.field.node.pre_admission_folder.field_birth_date
+    - field.field.node.pre_admission_folder.field_for_who
+    - field.field.node.pre_admission_folder.field_had_an_accident
+    - field.field.node.pre_admission_folder.field_have_a_professional_diseas
+    - field.field.node.pre_admission_folder.field_have_digital_assurance_car
+    - field.field.node.pre_admission_folder.field_have_health_assurance
+    - field.field.node.pre_admission_folder.field_have_social_security
+    - field.field.node.pre_admission_folder.field_health_assurance_help
+    - field.field.node.pre_admission_folder.field_hospitalisation_date
+    - field.field.node.pre_admission_folder.field_informed_person
+    - field.field.node.pre_admission_folder.field_institution
+    - field.field.node.pre_admission_folder.field_practitioner
+    - field.field.node.pre_admission_folder.field_recto_assurance_card
+    - field.field.node.pre_admission_folder.field_social_number
+    - field.field.node.pre_admission_folder.field_social_number_key
+    - field.field.node.pre_admission_folder.field_social_security_institutio
+    - field.field.node.pre_admission_folder.field_verso_assurance_card
+    - image.style.thumbnail
+    - node.type.pre_admission_folder
+  module:
+    - datetime
+    - field_group
+    - image
+third_party_settings:
+  field_group:
+    group_step_1:
+      children:
+        - field_for_who
+      label: 'Step 1'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: steps
+      format_settings:
+        classes: ''
+        id: ''
+        label_as_html: false
+        add_label: 'Save and Next'
+        edit_label: ''
+        cancel_button: ''
+        cancel_path: ''
+        previous_button: ''
+        next_button: ''
+        submit_button: Save
+        preview_button: ''
+        delete_button: ''
+        delete_path: ''
+    group_step_2:
+      children:
+        - field_birth_date
+      label: 'Step 2'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: steps
+      format_settings:
+        classes: ''
+        id: ''
+        label_as_html: false
+        add_label: 'Save and Next'
+        edit_label: ''
+        cancel_button: ''
+        cancel_path: ''
+        previous_button: ''
+        next_button: Next
+        submit_button: Save
+        preview_button: ''
+        delete_button: ''
+        delete_path: ''
+    group_step_3:
+      children:
+        - field_hospitalisation_date
+        - field_practitioner
+        - field_institution
+      label: 'Step 3'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: steps
+      format_settings:
+        classes: ''
+        id: ''
+        label_as_html: false
+        add_label: 'Save and Next'
+        edit_label: ''
+        cancel_button: ''
+        cancel_path: ''
+        previous_button: ''
+        next_button: Next
+        submit_button: Save
+        preview_button: ''
+        delete_button: ''
+        delete_path: ''
+id: node.pre_admission_folder.multisteps
+targetEntityType: node
+bundle: pre_admission_folder
+mode: multisteps
+content:
+  field_birth_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_for_who:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_had_an_accident:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_have_a_professional_diseas:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_have_digital_assurance_car:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_have_health_assurance:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_have_social_security:
+    type: options_select
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_health_assurance_help:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hospitalisation_date:
+    type: datetime_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_informed_person:
+    type: entity_reference_autocomplete
+    weight: 16
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_institution:
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_practitioner:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_recto_assurance_card:
+    type: image_image
+    weight: 9
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_social_number:
+    type: number
+    weight: 10
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_number_key:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_security_institutio:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_verso_assurance_card:
+    type: image_image
+    weight: 13
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  translation: true
+  uid: true

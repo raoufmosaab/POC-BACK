@@ -1,0 +1,26 @@
+uuid: 33ae056c-2393-487d-93f5-f91e13f821ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - paragraphs.paragraphs_type.progression_step
+  module:
+    - text
+id: paragraph.progression_step.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: progression_step
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text

@@ -1,0 +1,23 @@
+uuid: 9785d889-a299-4a8f-bba4-374501074c51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_have_a_professional_diseas
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_have_a_professional_diseas
+field_name: field_have_a_professional_diseas
+entity_type: node
+bundle: pre_admission_folder
+label: 'Have a professional disease'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'false'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

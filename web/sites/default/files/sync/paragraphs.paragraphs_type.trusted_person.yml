@@ -1,0 +1,10 @@
+uuid: 811d3329-31c3-44ef-b7ac-ba4c594207e4
+langcode: en
+status: true
+dependencies: {  }
+id: trusted_person
+label: 'Trusted person'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

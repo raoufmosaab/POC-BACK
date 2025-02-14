@@ -1,0 +1,39 @@
+uuid: 9d72843d-b7bb-4459-b225-868c5c3fad1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_state
+field_name: field_state
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: Start
+    -
+      value: '1'
+      label: Created
+    -
+      value: '2'
+      label: Review
+    -
+      value: '3'
+      label: Validated
+    -
+      value: '4'
+      label: Closed
+    -
+      value: '5'
+      label: Archived
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: d0ee0d2d-93cb-4161-956b-8c8ee7d5b9c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_security_institutio
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_social_security_institutio
+field_name: field_social_security_institutio
+entity_type: node
+bundle: pre_admission_folder
+label: 'Social Security Institution'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

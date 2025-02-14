@@ -1,0 +1,20 @@
+uuid: bb8049cc-896c-4e92-8565-a116fa317084
+langcode: en
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - config_pages
+    - serialization
+    - user
+id: entity.config_pages
+plugin_id: 'entity:config_pages'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - cookie

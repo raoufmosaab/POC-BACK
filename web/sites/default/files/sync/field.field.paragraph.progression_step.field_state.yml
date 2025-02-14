@@ -1,0 +1,21 @@
+uuid: a4c9949c-77bb-4371-97c9-7349e2ecafa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_state
+    - paragraphs.paragraphs_type.progression_step
+  module:
+    - options
+id: paragraph.progression_step.field_state
+field_name: field_state
+entity_type: paragraph
+bundle: progression_step
+label: State
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: 32c4400d-ea4f-42fc-9439-ac463a49e215
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_have_digital_assurance_car
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_have_digital_assurance_car
+field_name: field_have_digital_assurance_car
+entity_type: node
+bundle: pre_admission_folder
+label: 'Have Digital Assurance Card'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'true'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

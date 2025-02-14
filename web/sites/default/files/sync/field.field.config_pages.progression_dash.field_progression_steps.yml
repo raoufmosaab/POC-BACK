@@ -1,0 +1,35 @@
+uuid: 224ae36d-db06-4865-ad5c-0fa04782cf93
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.progression_dash
+    - field.storage.config_pages.field_progression_steps
+    - paragraphs.paragraphs_type.progression_step
+id: config_pages.progression_dash.field_progression_steps
+field_name: field_progression_steps
+entity_type: config_pages
+bundle: progression_dash
+label: 'Progression Steps'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      progression_step: progression_step
+    negate: 0
+    target_bundles_drag_drop:
+      business_rule:
+        weight: 4
+        enabled: false
+      progression_step:
+        weight: 5
+        enabled: true
+      trusted_person:
+        weight: 6
+        enabled: false
+field_type: entity_reference

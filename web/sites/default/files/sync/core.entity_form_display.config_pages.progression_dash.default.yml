@@ -1,0 +1,40 @@
+uuid: afacb207-b668-440c-8bbf-cf717d8ee029
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.progression_dash
+    - field.field.config_pages.progression_dash.field_progression_steps
+    - field.field.config_pages.progression_dash.field_steps
+  module:
+    - custom_field
+    - inline_entity_form
+id: config_pages.progression_dash.default
+targetEntityType: config_pages
+bundle: progression_dash
+mode: default
+content:
+  field_progression_steps:
+    type: inline_entity_form_simple
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: true
+      collapsed: true
+      revision: false
+    third_party_settings: {  }
+  field_steps:
+    type: custom_stacked
+    weight: 1
+    region: content
+    settings:
+      label: true
+      wrapper: div
+      open: true
+    third_party_settings: {  }
+hidden:
+  label: true

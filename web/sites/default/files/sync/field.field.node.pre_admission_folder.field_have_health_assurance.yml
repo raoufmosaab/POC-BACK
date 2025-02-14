@@ -1,0 +1,23 @@
+uuid: e03781be-9997-4c64-991a-eb48ec78c1c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_have_health_assurance
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_have_health_assurance
+field_name: field_have_health_assurance
+entity_type: node
+bundle: pre_admission_folder
+label: 'Have health assurance'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'no'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

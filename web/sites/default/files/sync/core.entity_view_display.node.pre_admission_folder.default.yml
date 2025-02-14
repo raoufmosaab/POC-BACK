@@ -1,0 +1,179 @@
+uuid: d72f62c3-3fde-447a-930b-8d6a7f8d7ec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pre_admission_folder.field_birth_date
+    - field.field.node.pre_admission_folder.field_for_who
+    - field.field.node.pre_admission_folder.field_had_an_accident
+    - field.field.node.pre_admission_folder.field_have_a_professional_diseas
+    - field.field.node.pre_admission_folder.field_have_digital_assurance_car
+    - field.field.node.pre_admission_folder.field_have_health_assurance
+    - field.field.node.pre_admission_folder.field_have_social_security
+    - field.field.node.pre_admission_folder.field_health_assurance_help
+    - field.field.node.pre_admission_folder.field_hospitalisation_date
+    - field.field.node.pre_admission_folder.field_informed_person
+    - field.field.node.pre_admission_folder.field_institution
+    - field.field.node.pre_admission_folder.field_practitioner
+    - field.field.node.pre_admission_folder.field_recto_assurance_card
+    - field.field.node.pre_admission_folder.field_social_number
+    - field.field.node.pre_admission_folder.field_social_number_key
+    - field.field.node.pre_admission_folder.field_social_security_institutio
+    - field.field.node.pre_admission_folder.field_verso_assurance_card
+    - node.type.pre_admission_folder
+  module:
+    - datetime
+    - image
+    - options
+    - user
+id: node.pre_admission_folder.default
+targetEntityType: node
+bundle: pre_admission_folder
+mode: default
+content:
+  field_birth_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_for_who:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_had_an_accident:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_have_a_professional_diseas:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_have_digital_assurance_car:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_have_health_assurance:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_have_social_security:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_health_assurance_help:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_hospitalisation_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_informed_person:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_institution:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 115
+    region: content
+  field_practitioner:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 114
+    region: content
+  field_recto_assurance_card:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_social_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_social_number_key:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_social_security_institutio:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  field_verso_assurance_card:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

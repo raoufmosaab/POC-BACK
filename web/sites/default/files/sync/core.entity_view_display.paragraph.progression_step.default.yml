@@ -1,0 +1,48 @@
+uuid: c33577b7-088a-413d-a86f-42f8c194d7f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.progression_step.field_description
+    - field.field.paragraph.progression_step.field_state
+    - field.field.paragraph.progression_step.field_subtitle
+    - field.field.paragraph.progression_step.field_title
+    - paragraphs.paragraphs_type.progression_step
+  module:
+    - options
+    - text
+id: paragraph.progression_step.default
+targetEntityType: paragraph
+bundle: progression_step
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_state:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subtitle:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

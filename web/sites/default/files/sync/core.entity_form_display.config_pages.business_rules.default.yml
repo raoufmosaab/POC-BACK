@@ -1,0 +1,24 @@
+uuid: eab63cec-23e2-436e-8abb-0a01a711320e
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.business_rules
+    - field.field.config_pages.business_rules.field_rules
+id: config_pages.business_rules.default
+targetEntityType: config_pages
+bundle: business_rules
+mode: default
+content:
+  field_rules:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  label: true

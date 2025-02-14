@@ -1,0 +1,23 @@
+uuid: 98bca97e-650b-4643-8988-54d0254ccce3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_for_who
+    - node.type.pre_admission_folder
+  module:
+    - options
+id: node.pre_admission_folder.field_for_who
+field_name: field_for_who
+entity_type: node
+bundle: pre_admission_folder
+label: 'For Who'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: me
+default_value_callback: ''
+settings: {  }
+field_type: list_string

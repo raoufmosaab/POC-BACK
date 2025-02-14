@@ -1,0 +1,18 @@
+uuid: 24426047-3aff-4158-bae3-783443cd95e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - field
+    - serialization
+    - user
+id: entity.field_config
+plugin_id: 'entity:field_config'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

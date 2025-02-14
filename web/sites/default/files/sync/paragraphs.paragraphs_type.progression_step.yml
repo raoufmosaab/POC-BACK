@@ -1,0 +1,10 @@
+uuid: 47f7da94-2085-4519-b291-a274a81ef7ec
+langcode: en
+status: true
+dependencies: {  }
+id: progression_step
+label: 'Progression Step'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

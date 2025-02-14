@@ -1,0 +1,10 @@
+uuid: ab99c6f0-fc1b-4507-8c8c-38f8eef72d70
+langcode: en
+status: true
+dependencies: {  }
+id: business_rule
+label: 'Business Rule'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

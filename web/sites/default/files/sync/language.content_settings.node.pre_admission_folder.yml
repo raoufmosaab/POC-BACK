@@ -1,0 +1,16 @@
+uuid: 317760ef-3a31-4c9c-b847-cbc30d86dada
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pre_admission_folder
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.pre_admission_folder
+target_entity_type_id: node
+target_bundle: pre_admission_folder
+default_langcode: site_default
+language_alterable: false

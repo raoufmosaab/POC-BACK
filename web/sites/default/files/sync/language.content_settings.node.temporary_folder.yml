@@ -1,0 +1,11 @@
+uuid: 13f472d1-fd2c-486c-a64d-9e41efca71db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.temporary_folder
+id: node.temporary_folder
+target_entity_type_id: node
+target_bundle: temporary_folder
+default_langcode: site_default
+language_alterable: false
